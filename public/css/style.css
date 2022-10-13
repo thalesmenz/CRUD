@@ -1,0 +1,16 @@
+body{
+    background-color: whitesmoke;
+}
+
+.containerCrud {
+    width: 90%;
+    height: 100px;
+    background-color: white;
+    border: 5px solid purple;
+    margin: 5%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around
+}
