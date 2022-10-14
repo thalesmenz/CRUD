@@ -8,13 +8,29 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="containerCrud">
-        <p>id</p>
-        <p>name</p>
-        <p>age</p>
-        <p>email</p>
-        <p>genere</p>
-    </div>
+    
+    <button onclick="openModal()" id="abrirModal"> Criar</button>
+    <button onclick="addUser()" class="button">adicionar</button>
 
+        <div class="modal" id="modal">
+            <div class="content">
+                <button id="criar">criar</button>
+            </div>
+        </div>
+
+        <div class="containerCrud" >
+
+            <p>id</p>
+            <p>name</p>
+            <p>age</p>  
+            
+        </div>
+
+        <div class="containerUsers" id="containerUsers">
+            
+        </div>        
+
+        <script src="./main.js"></script>
+   
 </body>
 </html>

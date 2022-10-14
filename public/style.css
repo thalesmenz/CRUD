@@ -7,10 +7,75 @@ body{
     height: 100px;
     background-color: white;
     border: 5px solid purple;
-    margin: 5%;
+    margin-left: 5%;
+    margin-bottom: 0%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-around
+    justify-content: space-around;
+    border-radius: 7px;
 }
+
+.containerUsers {
+    width: 88.9%;
+    height: auto;
+    background-color: white;
+    border: 5px solid purple;
+    border-top: 0px;
+    margin: 5%;
+    margin-top: 0%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    flex-direction: column;
+}
+
+.divzinha {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.users{
+ width: 20%;
+ position: relative;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+}
+
+.content {
+    background-color:  #d3d3d3;
+    padding: 20%;
+    border-radius: 5%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .containerGlobal {
+    width: auto;
+    height: auto;
+} */
+
+/* .button{
+    position: relative;
+    left: 15%;
+    width: 15%;
+    height: 42px;
+    border-radius: 7px;
+    top: 17px;
+    margin-bottom: 3%;
+} */
