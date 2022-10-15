@@ -1,18 +1,6 @@
-const listUsers = [
-    {id:1, name:"ghostface", age: 23},
-    {id:2, name: "coringaKK", age: 56},
- ]
-
-
-const newUser = {
-    id: 3,
-    name: "thales",
-    age: 16
-}
-
-
-
-
+const buttonOpenModal = document.getElementById("abrirModal")
+const buttonCloseModal = document.getElementById("sair")
+const CreateNewPerson = document.getElementById("criar")
 
 const openModal = function openModal() {
     const modal = document.getElementById("modal")
@@ -23,9 +11,6 @@ const openModal = function openModal() {
         modal.style.display = "block"
     }
 }
-
-const buttonOpenModal = document.getElementById("abrirModal")
-const buttonCloseModal = document.getElementById("criar")
 
 buttonOpenModal.onclick = (event) => {
     const modal = document.getElementById('modal')
@@ -41,29 +26,53 @@ buttonCloseModal.onclick = (event) => {
     }
 }
 
-function newListUsers() {
-    const newUsers = listUsers.map(users => {
-        return `
-        <div class="divzinha">
-        <p>${users.id}</p>  <p>${users.name}</p> <p>${users.age}</p>
-        </div>
-         <br>
-         `
-    })       
 
-    return newUsers
-}
+ 
 
-const newListUsersBody = newListUsers()
 
 function addUser() {
+    var nomeInput = document.getElementById('name').value
+    var emailInput = document.getElementById('email').value
+    var ageInput = document.getElementById('age').value
+    
+    function CreateUser(nome, email, age) {
+        this.name = nome
+        this.email = email
+        this.age = age
+    }
+    
+    var newUser = new CreateUser(nomeInput, emailInput, ageInput) 
+    
+    var listUsers = []
+    
     listUsers.push(newUser)
-    console.log()
+    
+    function newListUsers() {
+        const newUsers = listUsers.map(users => {
+            return `
+            <div class="divzinha">
+              <p>${users.name}</p> <p>${users.email}</p> <p>${users.age}</p>
+              </div>
+              <br>
+              `
+            })       
+            
+            return newUsers
+        }
+
+    const newListUsersBody = newListUsers()
+
     newListUsers()
-    console.log(listUsers)
+
     var containerUsers = document.getElementById("containerUsers")
     var newDivContainer = `${newListUsersBody.join("")}`
     containerUsers.insertAdjacentHTML("beforeend", newDivContainer)
+    let fecharModal = 1
+    if (fecharModal = 1) {
+        openModal()
+    }
+    
+
 
 }
 

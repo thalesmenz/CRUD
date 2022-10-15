@@ -10,18 +10,34 @@
 <body>
     
     <button onclick="openModal()" id="abrirModal"> Criar</button>
-    <button onclick="addUser()" class="button">adicionar</button>
-
-        <div class="modal" id="modal">
-            <div class="content">
-                <button id="criar">criar</button>
+    
+    <div class="modal" id="modal">
+        <div class="content">
+            <div>
+                <label for="">Nome</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="text" id="email">
+            </div>
+            <div>
+                <label for="">Idade</label>
+                <input type="number" id="age">
+            </div>
+            
+            <div id="botoes">
+                <button id="sair">sair</button>
+                <button onclick="addUser()" class="button">adicionar</button>
+                   
+                </div>
             </div>
         </div>
 
         <div class="containerCrud" >
 
-            <p>id</p>
             <p>name</p>
+            <p>email</p>
             <p>age</p>  
             
         </div>
