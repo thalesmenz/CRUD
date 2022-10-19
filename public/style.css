@@ -72,12 +72,22 @@ body{
     height: auto;
 } */
 
-/* .button{
-    position: relative;
-    left: 15%;
-    width: 15%;
-    height: 42px;
+.button{
+    width: 12%;
     border-radius: 7px;
-    top: 17px;
-    margin-bottom: 3%;
-} */
+    position: relative;
+    left: 32%;
+    height: 3.8rem;
+    border: 5px solid purple;
+    margin: 1.5rem;
+}
+
+.buttonModal {
+    width: 8%;
+    border-radius: 7px;
+    position: relative;
+    /* left: 32%; */
+    /* height: 3.8rem; */
+    border: 5px solid purple;
+    margin: 1.5rem;
+}

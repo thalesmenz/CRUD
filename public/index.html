@@ -9,10 +9,20 @@
 </head>
 <body>
     
-    <button onclick="openModal()" id="abrirModal"> Criar</button>
+    <button class="button" onclick="openModal()" id="abrirModal">Criar</button>
+    <button class="button" onclick="openModalDialog()" id="deletarModal">deletar</button>
+
+    <dialog id="dialog">
+        <input type="text" id="usuarioToBeDeleted">
+        <button onclick="closeModalDialog()" id="buttonCloseDialog">fechar</button>
+        <button onclick="deleteUser()" id="deletar">deletar</button>
+    </dialog>
     
     <div class="modal" id="modal">
         <div class="content">
+
+            <p>Preencha todas as informações</p>
+
             <div>
                 <label for="">Nome</label>
                 <input type="text" id="name">
@@ -28,7 +38,7 @@
             
             <div id="botoes">
                 <button id="sair">sair</button>
-                <button onclick="addUser()" class="button">adicionar</button>
+                <button onclick="addUser()" class="buttonModal">adicionar</button>
                    
                 </div>
             </div>
