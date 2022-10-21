@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <button class="button" onclick="openModal()" id="abrirModal">Criar</button>
+    
+    <div class="modal" id="modal">
+        <div class="content">
+
+            <p class="text">Preencha todas as informações</p>
+
+            <div>
+                <label class="inputContainer" for="">Nome:</label>
+                <input class="input" type="text" id="name">
+            </div>
+            <div>
+                <label class="inputContainer" for="">Email:</label>
+                <input class="input" type="text" id="email">
+            </div>
+            <div class="inputContainer">
+                <label class="inputContainer" for="">Idade:</label>
+                <input class="input" type="number" id="age">
+            </div>
+            
+            <div class="conjuntoDeBotoes" id="botoes">
+                <button class="buttonModal" id="sair">sair</button>
+                <button onclick="addUser()" class="buttonModal">adicionar</button>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="containerCrud" >
+
+            <p class="text"></p>name</p>
+            <p class="text"></p>email</p>
+            <p class="text"></p>age</p>  
+            
+        </div>
+
+        <div class="containerUsers" id="containerUsers">
+            
+        </div>        
+
+        <script src="./main.js"></script>
+   
+</body>
+</html>

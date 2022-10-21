@@ -1,0 +1,121 @@
+body{
+    background-color: whitesmoke;
+}
+
+.containerCrud {
+    width: 90%;
+    height: 100px;
+    background-color: white;
+    border: 5px solid purple;
+    margin-left: 5%;
+    margin-bottom: 0%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 7px;
+    font-size: 20px;
+}
+
+.containerUsers {
+    width: 88.9%;
+    height: auto;
+    background-color: white;
+    border: 5px solid purple;
+    border-top: 0px;
+    margin: 5%;
+    margin-top: 0%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.listaContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.users{
+ width: 20%;
+ position: relative;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+}
+
+.content {
+    justify-content: space-around;
+    background-color: lightgray;
+    height: 100%;
+    padding-top: 5%;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 7px solid purple;
+}
+
+/* .containerGlobal {
+    width: auto;
+    height: auto;
+} */
+
+.button{
+    width: 12%;
+    border-radius: 7px;
+    position: relative;
+    left: 43%;
+    height: 3.8rem;
+    border: 5px solid purple;
+    margin: 1.5rem;
+    font-size: 20px;
+}
+
+.buttonModal {
+    width: 60%;
+    border-radius: 12px;
+    position: relative;
+    border: 5px solid purple;
+    margin: 0.5rem;
+    font-size: 18px;
+}
+
+.conjuntoDeBotoes {
+    width: 45%;
+    height: 18%;
+    display: flex;
+}
+
+.input {
+    height: 100%;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 20px;
+    font-size: 20px;
+}
+
+.inputContainer {
+    height: 8%;
+    font-size: 20px;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.classN {
+    
+}
